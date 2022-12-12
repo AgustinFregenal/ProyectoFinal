@@ -1,0 +1,4 @@
+@mixin flex-column {
+    display: map-get($flexible, flex);
+    flex-direction: map-get($flexible, column);    
+}

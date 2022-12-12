@@ -1,0 +1,54 @@
+main {
+    .container {
+        .btn-link {
+            color: $color-blanco;
+        }
+        .btn-dark {
+            background-color: $color-negro;
+            &:hover {
+                background-image: linear-gradient(to top, #603e70, #63467c, #654e88, #665795, #6660a1, #6271b1, #5f82c0, #5c92cc, #63adda, #78c7e3, #97dfec, #bcf7f6);
+            }
+        }
+        h1 {
+            font-size: 5rem;
+        }
+        .parrafo{
+            text-align: map-get($flexible, left);
+            font-size: 1.5rem;
+            padding: 10px;
+        }
+        .row {
+            a {
+                text-decoration: none;
+                img {
+                    width: ($valor-100/2)*2;
+                    transition: all 400ms ease;
+                    &:hover {
+                        transform: translateY(-3%);
+                    }
+                }                
+            }
+            .col {
+                .card {
+                    background-color: $color-blanco;
+                    img {
+                        width: $valor-100;
+                        height: 240px;
+                        object-fit: cover;
+                    }
+                    .img-holder {
+                        overflow: hidden;
+                        img {
+                            transition: all 1.5s ease;
+                        }
+                        &:hover {
+                            img {
+                                transform: scale(1.5);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.text-white-55 {
+    color: $color-gris;
+}
+.navcolor {
+    background-color: $color-negro;
+}
+.container {
+    .btn {
+        &:hover {
+            color: $color-negro;
+        }
+        &:focus {
+            color: $color-blanco;
+        }
+    }
+    .btn-outline-light {
+        color: $color-gris;
+        border-color: $color-gris;
+    }
+    .btn-circle {
+        width: 30px;
+        height: 30px;
+        padding: 6px 0px;
+        border-radius: 15px;
+        text-align: map-get($flexible, center);
+        font-size: 12px;
+        line-height: 1.42857;
+    }
+}
