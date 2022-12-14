@@ -1,16 +1,27 @@
 @media screen and (max-width: 640px) {
     body {
         background-image: linear-gradient(to top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+        main {
+            .container {
+                .img-holder {
+                    img {
+                        width: 400px;
+                        height: 250;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
     }
 }
   
-  @media screen and (min-width: 640px) and (max-width: 1280px) {
+@media screen and (min-width: 640px) and (max-width: 1280px) {
     body {
         background-image: linear-gradient(to top, #daec4f, #80ee84, #00e7be, #00d9e9, #00c6f9, #3bc4fa, #55c1f9, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
     }
 }
   
-  @media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
     body {
         background-image: linear-gradient(to top, #603e70, #63467c, #654e88, #665795, #6660a1, #6271b1, #5f82c0, #5c92cc, #63adda, #78c7e3, #97dfec, #bcf7f6);
     }

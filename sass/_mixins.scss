@@ -2,3 +2,7 @@
     display: map-get($flexible, flex);
     flex-direction: map-get($flexible, column);    
 }
+
+@mixin overflow {
+    overflow: hidden;
+}

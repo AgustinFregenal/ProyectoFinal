@@ -13,9 +13,12 @@ main {
             font-size: 5rem;
         }
         .parrafo{
-            text-align: map-get($flexible, left);
+            text-align: map-get($flexible, justifica);
             font-size: 1.5rem;
             padding: 10px;
+        }
+        .img-holder{
+            @include overflow;
         }
         .row {
             a {
@@ -37,7 +40,7 @@ main {
                         object-fit: cover;
                     }
                     .img-holder {
-                        overflow: hidden;
+                        @include overflow;
                         img {
                             transition: all 1.5s ease;
                         }
